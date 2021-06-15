@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+            <legend>Profile Information</legend>
+            <div>
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            </div>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+            </div>
+            <div>
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <b>Gender:</b>
+                <label for="male"><b>Male</b></label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female"><b>Female</b></label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <div>
+                <label for="date"><b>Birthday</b></label>
+                <input type="date" id="date" name="birthday">
+            </div>
+            <div>
+                <label for="contacts"><b>Contacts</b></label>
+                <select id="contacts">
+                    <option label="Skype" value="Skype">Skype</option>
+                    <option label="Telegram" value="Telegram">Telegram</option>
+                    <option label="Viber" value="Viber">Viber</option>
+                    <option label="WhatsApp" value="WhatsApp">WhatsApp</option>
+                </select>
+                <input type="text" placeholder="johndoe">
+                <button type="button">Delete</button>
+            </div>
+            <div>
+                <select>
+                    <option label="Skype" value="Skype">Skype</option>
+                    <option label="Telegram" value="Telegram">Telegram</option>
+                    <option label="Viber" value="Viber">Viber</option>
+                    <option label="WhatsApp" value="WhatsApp">WhatsApp</option>
+                    <option label="Other" value="Other">Other</option>
+                </select>
+                <input type="text" placeholder="Your social media">
+                <input type="text" placeholder="johndoe">
+                <button type="button">Delete</button>
+            </div>
+            <div>
+                <input type="button" value="Save">
+                or
+                <input type="button" value="Add new">
+            </div>
+            <div>
+                <label for="photo"><b>Photo</b></label>
+                <input type="file" id="photo">
+            </div>
+            <div>
+                <label for="hobbies"><b>Hobbies</b></label>
+                <select id="hobbies" multiple>
+                    <option label="Movies" value="Movies">Movies</option>
+                    <option label="Sport" value="Sport">Sport</option>
+                    <option label="Literature" value="Literature">Literature</option>
+                    <option label="Languages" value="Languages">Languages</option>
+                    <option label="Painting" value="Painting">Painting</option>
+                    <option label="Games" value="Games">Games</option>
+                </select>
+            </div>
+            <div>
+                <label for="adds"><b>Some words</b></label>
+                <textarea id="adds" rows="5" cols="30"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="agreement" value="agreement">
+                <label for="agreement">Agreement</label>
+            </div>
+            <div>
+                <input type="submit" value="Update profile">
+                <input type="button" value="Next">
+            </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
