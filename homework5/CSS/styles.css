@@ -1,0 +1,44 @@
+body {
+    background: cornsilk;
+    font-family: 'Barlow', sans-serif; 
+}
+
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 10px;
+    background:lightsalmon;
+    background-image: url("../IMAGES/flower.png");
+    background-blend-mode: lighten;
+    opacity: 0.8;
+}
+
+.section {
+    font-weight: 600;
+    font-style: italic;
+    border: 1px solid coral;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.section__heading {
+    font-style: normal;
+    color:coral;
+}
+
+.aside1, .aside2 {
+    margin: 20px;
+}
+
+.footer {
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    text-align: center;
+    color: lightslategray;
+}
+
+
+
