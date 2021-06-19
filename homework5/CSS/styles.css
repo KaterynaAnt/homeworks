@@ -11,9 +11,9 @@ body {
 .header {
     padding: 10px;
     background:lightsalmon;
-    background-image: url("../IMAGES/flower.png");
+    background-image: url("./images/flower.png");
     background-blend-mode: lighten;
-    opacity: 0.8;
+    opacity: .8;
 }
 
 .section {
@@ -29,15 +29,22 @@ body {
     color:coral;
 }
 
-.aside1, .aside2 {
+.aside_top {
     margin: 20px;
 }
 
-.footer {
-    font-family: 'Pacifico', cursive;
-    font-size: 12px;
+.aside_left {
+    margin: 20px;
+    font-family: Pacifico, cursive;
+    font-size: 18px;
     text-align: center;
+}
+
+.footer {
     color: lightslategray;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    text-align: center;
 }
 
 
