@@ -1,0 +1,44 @@
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    background-color:lightsalmon;
+    height: 20vh;
+    margin: 0 0 10px 0;
+}
+
+.sidenav {
+    width: calc(20% - 10px);
+    background-color: lightgrey;
+    height: 60vh;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main {
+    width: calc(60% - 10px);
+    background-color:lavenderblush;
+    height: 60vh;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color:lightgrey;
+    height: 60vh;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color:darkslategrey;
+    height: 20vh;
+    clear: both;
+}
