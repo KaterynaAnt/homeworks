@@ -1,0 +1,150 @@
+body {
+    background-color: lightgrey;
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.block {
+    margin: 0 -5px;
+}
+
+.block__inside {
+    width: 100%;
+    background-color: white;
+    min-height: 20vh;
+    margin: 0 5px 10px;
+    padding: 10px;
+}
+
+.content {
+    width: 100%;
+    background-color: white;
+    min-height: 40vh;
+    padding: 0 10px 10px;
+}
+
+.aside {
+    width: 100%;
+    background-color: white;
+    min-height: 40vh;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 0;
+    background-color: rgb(194, 194, 194);
+    padding-left: 10%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+    .block {
+        margin: 0 -5px;
+    }
+    
+    .block__inside {
+        width: calc(50% - 10px);
+        float: left;
+        background-color: white;
+        min-height: 20vh;
+        margin: 0 5px 10px;
+        padding: 10px;
+    }
+    
+    .content {
+        background-color: white;
+        min-height: 40vh;
+        padding: 0 10px 10px;
+        clear: both;
+    }
+    
+    .block__inside:last-child {
+        clear: both;
+        width: 100%;
+    }
+
+    .aside {
+        background-color: white;
+        min-height: 40vh;
+        padding: 10px;
+    }
+    
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    li {
+        list-style-type: none;
+        padding: 10px 0;
+        background-color: rgb(194, 194, 194);
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+    position: relative;
+    overflow-x: hidden;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .block {
+        margin: 0 -5px;
+    }
+    
+    .block__inside {
+        width: calc(100% / 3 - 10px);
+        background-color: white;
+        min-height: 20vh;
+        float: left;
+        margin: 0 5px 10px;
+        padding: 10px;
+    }
+    
+    .content {
+        width: calc(100% / 3 * 2);
+        background-color: white;
+        min-height: 40vh;
+        padding: 0 10px;
+        float: left;
+    }
+    
+    .aside {
+        width: calc(100% / 3);
+        background-color: white;
+        min-height: 40vh;
+        padding: 0 10px;
+        float: left;
+        margin-top: 0;
+    }
+    
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    li {
+        list-style-type: none;
+        padding: 10px 0;
+        background-color: rgb(194, 194, 194);
+        padding-left: 10%;
+    }
+}
