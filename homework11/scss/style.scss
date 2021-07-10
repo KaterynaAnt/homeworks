@@ -1,0 +1,84 @@
+@import './css/reset.css';
+
+$mainColor: darkorchid;
+$secondColor: rgb(235, 200, 6);
+$margin: 0 10px;
+$padding: 10px;
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $mainColor;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+
+    @media screen and (min-width: 580px) {
+        flex-flow: row wrap;
+        }
+
+    h1 {
+        text-align: center;
+        
+        @media screen and (min-width: 580px) {
+            width: 100%;
+        }
+    }
+
+    aside {
+        width: calc(100% - 20px);
+        margin: $margin;
+        border: 1px solid black;
+        padding: $padding;
+        background-color: $mainColor;
+
+        @media screen and (min-width: 580px) {
+            width: calc(100% / 3 - 20px);
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin: $margin;
+        }
+    }
+
+    .block__inside {
+        width: calc(100% - 20px);
+        min-height: 35vh;
+        margin: $margin;
+        background-color: $secondColor;
+        border: 1px solid black;
+        padding: $padding;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 1024px) {
+            &:last-child {
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-right: 0;
+            }
+
+            width: calc(100% / 2);
+        }
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .block {
+        width: calc(100% / 3 * 2);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .block {
+    display: flex;
+    }   
+}
