@@ -1,0 +1,101 @@
+@import './css/reset.css';
+body {
+  background-color: sandybrown;
+}
+
+.traffic_light {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  min-height: 510px;
+  border-radius: 5%;
+  background-color: black;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+.traffic_light span {
+  width: 130px;
+  height: 130px;
+  background-color: slategrey;
+  margin: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.traffic_light .red {
+  animation-name: red, red;
+  animation-duration: 7s, 7s;
+  animation-delay: 1s, 16s;
+}
+.traffic_light .yellow {
+  animation-name: yellow, yellow;
+  animation-duration: 3s, 3s;
+  animation-delay: 5s, 13s;
+}
+.traffic_light .green {
+  animation-name: green;
+  animation-duration: 8s;
+  animation-delay: 8s;
+}
+
+.leg {
+  width: 45px;
+  height: 160px;
+  background-color: black;
+  position: absolute;
+  top: 509px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+@keyframes red {
+  0% {
+    background-color: slategrey;
+  }
+  2% {
+    background-color: red;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes yellow {
+  0% {
+    background-color: slategrey;
+  }
+  10% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+@keyframes green {
+  0% {
+    background-color: slategrey;
+  }
+  10% {
+    background-color: green;
+  }
+  100% {
+    background-color: green;
+  }
+}/*# sourceMappingURL=style.css.map */
