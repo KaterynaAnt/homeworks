@@ -10,10 +10,11 @@ body {
   justify-content: center;
   width: 200px;
   min-height: 510px;
+  border: 8px solid rgb(49, 53, 58);
   border-radius: 5%;
   background-color: black;
   position: absolute;
-  top: 5%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%);
   -webkit-transform: translate(-50%);
@@ -37,27 +38,30 @@ body {
   -o-border-radius: 50%;
 }
 .traffic_light .red {
-  animation-name: red, red;
-  animation-duration: 7s, 7s;
-  animation-delay: 1s, 16s;
+  animation-name: red;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .traffic_light .yellow {
-  animation-name: yellow, yellow;
-  animation-duration: 3s, 3s;
-  animation-delay: 5s, 13s;
+  animation-name: yellow;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .traffic_light .green {
   animation-name: green;
-  animation-duration: 8s;
-  animation-delay: 8s;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .leg {
-  width: 45px;
-  height: 160px;
+  width: 40px;
+  height: 800px;
   background-color: black;
   position: absolute;
-  top: 509px;
+  top: calc(510px + 15%);
   left: 50%;
   transform: translate(-50%);
   -webkit-transform: translate(-50%);
@@ -67,35 +71,28 @@ body {
 }
 
 @keyframes red {
-  0% {
+  0%,  46%, 100% {
     background-color: slategrey;
   }
-  2% {
-    background-color: red;
-  }
-  100% {
+  5%, 43% {
     background-color: red;
   }
 }
+
 @keyframes yellow {
-  0% {
+  0%, 20%, 45%, 85% {
     background-color: slategrey;
   }
-  10% {
-    background-color: yellow;
-  }
-  100% {
+  25%, 43%, 87%, 100% {
     background-color: yellow;
   }
 }
+
 @keyframes green {
-  0% {
+  0%, 40%, 82%, 100% {
     background-color: slategrey;
   }
-  10% {
-    background-color: green;
-  }
-  100% {
+  50%, 80% {
     background-color: green;
   }
 }/*# sourceMappingURL=style.css.map */
