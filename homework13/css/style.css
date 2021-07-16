@@ -1,0 +1,63 @@
+body {
+  background-color: burlywood;
+}
+
+.header .header_top {
+  min-height: 80px;
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header_top .logo {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.header .nav {
+  min-height: 80px;
+  background-color: chocolate;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+.header .nav .nav-link {
+  color: white;
+}
+.header .nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.block {
+  background-color: white;
+  min-height: 100vh;
+}
+.block h1 {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  color: chocolate;
+}
+.block hr {
+  border: 1px dotted chocolate;
+}
+.block .sections > div {
+  background-color: chocolate;
+  min-height: 200px;
+  margin: 10px 0;
+  color: white;
+}
+.block h2 {
+  font-family: "Amatic SC", cursive;
+  color: chocolate;
+}
+.block .btn-primary {
+  background-color: chocolate;
+  border: none;
+}
+.block .btn-primary:hover {
+  background-color: white;
+  border: 1px solid chocolate;
+  color: chocolate;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+body {
+    background-color:burlywood;
+}
+
+$margin: 10px 0;
+$main-color: chocolate; 
+$white: white;
+$main-font: 'Roboto', sans-serif;
+$decorative-font:'Amatic SC', cursive;
+$font-lg: 1.5rem;
+
+.header {
+    .header_top {
+        min-height: 80px;
+        background-color:$main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            font-family: $main-font;
+            color: $white;
+        }
+    }
+
+    .nav {
+        min-height: 80px;
+        background-color: $main-color;
+        margin: $margin;
+        justify-content: center;
+        align-items: center;
+        font-family: $decorative-font;
+        font-size: $font-lg;
+        color: $white;
+        .nav-link {
+            color: $white; 
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, .1);
+        }
+    }
+}
+
+.block {
+    background-color: $white;
+    min-height: 100vh;
+    h1 {
+        font-family: $decorative-font;
+        text-align: center;
+        color: $main-color;
+    }
+    
+    hr {
+        border: 1px dotted $main-color;
+    }
+
+    .sections > div {
+        background-color: $main-color;
+        min-height: 200px;
+        margin: $margin;
+        color: $white;
+    }
+
+    h2 {
+        font-family: $decorative-font;
+        color: $main-color;
+    }
+
+    .btn-primary {
+        background-color:$main-color;
+        border: none;
+
+        &:hover {
+            background-color: $white;
+            border: 1px solid $main-color;
+            color: $main-color;
+        }
+    }
+}
