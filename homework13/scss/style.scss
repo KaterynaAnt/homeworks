@@ -49,15 +49,18 @@ $font-lg: 1.5rem;
         text-align: center;
         color: $main-color;
     }
-    
     hr {
-        border: 1px dotted $main-color;
+        border-bottom: 1px dotted $main-color;
     }
 
-    .sections > div {
+    .sections {
+        padding: 0 20px;
+    }
+
+    .sections > div > p {
         background-color: $main-color;
+        margin: 10px 20px;
         min-height: 200px;
-        margin: $margin;
         color: $white;
     }
 
@@ -75,5 +78,9 @@ $font-lg: 1.5rem;
             border: 1px solid $main-color;
             color: $main-color;
         }
+    }
+
+    .btn {
+        margin-bottom: 10px;
     }
 }
