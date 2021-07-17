@@ -40,12 +40,15 @@ body {
   color: chocolate;
 }
 .block hr {
-  border: 1px dotted chocolate;
+  border-bottom: 1px dotted chocolate;
 }
-.block .sections > div {
+.block .sections {
+  padding: 0 20px;
+}
+.block .sections > div > p {
   background-color: chocolate;
+  margin: 10px 20px;
   min-height: 200px;
-  margin: 10px 0;
   color: white;
 }
 .block h2 {
@@ -60,4 +63,7 @@ body {
   background-color: white;
   border: 1px solid chocolate;
   color: chocolate;
+}
+.block .btn {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
