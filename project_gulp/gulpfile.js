@@ -19,7 +19,7 @@ function html() {
 }
 
 function css() {
-    return src('src/scss/index.scss')
+    return src('src/css/index.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cleanCss())
