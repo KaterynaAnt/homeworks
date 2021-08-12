@@ -12,14 +12,14 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 
 function html() {
-    return src('src/index.html')
+    return src('src/[^_]*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest('build'))
         .pipe(browserSync.stream());
 }
 
 function css() {
-    return src('src/css/index.scss')
+    return src('src/css/[^_]*.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cleanCss())

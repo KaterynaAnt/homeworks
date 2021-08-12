@@ -895,6 +895,7 @@ body {
     
     .container {
         text-align: center;
+        
 
         @media (min-width: 1024px) {
             margin-bottom: 40px;
@@ -903,6 +904,7 @@ body {
     }
 
     &__information {
+        border-top: 4px solid #E6E6F0;
         position: relative;
         text-align: center;
         font-size: 16px;
@@ -921,6 +923,7 @@ body {
                 flex-wrap: wrap;
                 max-width: 500px; 
                 align-items: center;
+                padding-top: 23px;
             }
 
             ul > li {
@@ -937,10 +940,12 @@ body {
         address {
             font-weight: 400;
             font-style: normal;
+            padding-top: 23px;
 
         @media (min-width: 1024px) {
             margin-right: 31px;
             margin-bottom: 0;
+            padding-top: 0;
         }
 
         span {
@@ -983,6 +988,7 @@ body {
             font-weight: bold;
             color: $lightblue;
             margin: 20px;
+            text-decoration: none;
 
             @media (min-width: 1024px) {
                 margin: 0 20px;
